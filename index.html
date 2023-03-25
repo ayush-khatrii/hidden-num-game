@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Guess Number Game - Ayush Khatri</title>
+
+</head>
+
+
+<body class="h-screen bg-zinc-900  ">
+  <header class="text-white bg-[#000] body-font">
+    <div class="container  flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <a href="" class="ml-3 text-xl">Ayush Khatri</a>
+      </a>
+      <nav class="md:ml-auto  flex flex-wrap items-center text-base justify-center mr-10">
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-400" href="https://www.facebook.com/ayush.khatri.397" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400" href="https://twitter.com/khatri_ayush15/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400" href="https://instagram.com/ayush.khatrii/" target="_blank">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400" href="https://www.linkedin.com/in/ayush-khatri-795461231/" target="_blank">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+  <div class="container  h-screen flex text-center justify-center items-center flex-col ">
+    <div class="message  text-red-500  absolute md:top-[10%] top-[20%]   my-2  rounded ">
+      <div id="less" class="hidden border px-5 py-2">
+        Selected number is less than hidden number
+      </div>
+      <div id="greater" class="hidden border px-5 py-2">
+        Selected number is greater than hidden number
+      </div>
+    </div>
+
+
+    <div class="container px-10">
+      <div class="gameBody">
+        <h1 class="text-[#ffffff] mb-10 w-full text-xl sm:text-2xl md:text-4xl"> Guess The Hidden number </h1>
+        <div class="main">
+          <div class="slide pb-10">
+            <input id="range" type="range" min="0" max="100" value="0" step="0"
+              class="w-full  h-5 px-1 bg-[#003459] rounded-lg appearance-none cursor-pointer">
+            <div class="innermain flex justify-between items-center">
+
+              <div class="val bg-gray-800 px-5 py-3 text-gray-50 "> 0 </div>
+              <h2 id="time" class="border p-2 text-blue-100">
+                0:0s
+              </h2>
+            </div>
+          </div>
+          <h4 class="text-gray-100 py-2 text-lg">Total Attempts :
+            <span id="counter">
+              <strong id="counter" class="">
+                0
+              </strong>
+            </span>
+          </h4>
+          <button id="check"
+            class="bg-[#007ea7] w-full text-white font-bold py-4 px-2 text-2xl my-5 rounded md:text-base">
+            Check
+          </button>
+        </div>
+        <button id="newGAME"
+          class="bg-[#00a8e8] w-full   text-white  py-4 px-2 text-2xl rounded md:text-base font-bold">
+          Start Game
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+
+
+</html>
