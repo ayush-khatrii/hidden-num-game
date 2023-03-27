@@ -8,7 +8,7 @@ You can play the game [here](https://hiddennumber.netlify.app/).
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/hidden-number-game.git`
+1. Clone the repository: `git clone https://github.com/ayushkhatri15/hidden-num-game.git`
 2. Open `index.html` in your browser.
 
 ## Usage
